@@ -33,7 +33,7 @@
   }
   .page-slide-leave-to {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
 
 
