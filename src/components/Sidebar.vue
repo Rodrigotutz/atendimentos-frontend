@@ -1,7 +1,7 @@
 <template>
     <nav class="sidebar">
         <div class="mx-2 fixed-top">
-            <button type="button" class="btn text-white fs-2" data-bs-toggle="modal" data-bs-target="#sidebar"><i class="bi bi-list"></i></button>
+            <button type="button" class="btn text-white fs-4" data-bs-toggle="modal" data-bs-target="#sidebar"><i class="bi bi-list"></i></button>
         </div>
         <div class="modal fade" id="sidebar" tabindex="-1" aria-labelledby="sidebar" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -9,20 +9,27 @@
                     <div class="modal-header">
                         <h3 class="modal-title" id="exampleModalLabel">Rodrigo Tutz</h3>
                     </div>
-                    <div class="modal-body fs-5 d-flex flex-column gap-1">
-                        <li class="nav-link ">
-                            <router-link to="/inicio" class="nav-link"><i class="bi bi-house-door-fill"></i> Inicio</router-link>
-                        </li>
+                    <div class="modal-body fs-5 d-flex flex-column justify-content-between">
+                        <div class="links d-flex flex-column gap-2">
+                            <li class="nav-link ">
+                                <router-link to="/atendimentos" class="nav-link"><i class="bi bi-bookmark-plus-fill"></i> Atendimentos</router-link>
+                            </li>
+                            <li class="nav-link">
+                                <router-link to="/perfil" class="nav-link"><i class="bi bi-person-circle"></i> Perfil</router-link>
+                            </li>
+                            <li class="nav-link">
+                                <router-link to="/dicas" class="nav-link"><i class="bi bi-info-circle-fill"></i> Dicas</router-link>
+                            </li>
+                            <li class="nav-link">
+                                <router-link to="/admin" class="nav-link"><i class="bi bi-gear-fill"></i> Adminstrativo</router-link>
+                            </li>
+                        </div>
+                        
                         <li class="nav-link">
-                            <router-link to="/sobre" class="nav-link"><i class="bi bi-bookmark-fill"></i> Sobre</router-link>
+                            <router-link to="/" class="nav-link"><i class="bi bi-door-open-fill"></i> Sair</router-link>
                         </li>
-                        <li class="nav-link">
-                            <router-link to="/contato" class="nav-link"><i class="bi bi-telephone-fill"></i> Contato</router-link>
-                        </li>
+                    
                     </div> 
-                    <div class="footer">
-                       &copy; 2023 - <a href="https://rodrigotutz.com" target="_blank" class="text-white">Rodrigo Tutz</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -49,9 +56,4 @@
         font-weight: bold;
     }
 
-    .footer {
-        text-align: center;
-        margin-left: -30px;
-        padding-bottom: 30px;
-    }
 </style>

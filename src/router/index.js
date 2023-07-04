@@ -1,49 +1,60 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import LoginView from '../views/LoginView.vue'
-import RegisterView from '../views/RegisterView.vue'
-import AlterPassView from '../views/AlterPassView.vue'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
-import ContactView from '../views/ContactView.vue'
+import LoginView from '../views/login/LoginView.vue'
+import RegisterView from '../views/login/RegisterView.vue'
+import AlterPassView from '../views/login/AlterPassView.vue'
+import CallsView from '../views/app/CallsView.vue'
+import ProfileView from '../views/app/ProfileView.vue'
+import TipsView from '../views/app/TipsView.vue'
+import AdminView from '../views/app/AdminView.vue'
 
 
 const routes = [
   {
     path: '/',
-    name: 'login',
+    name: 'Login',
     component: LoginView
   },
   {
     path: '/cadastrar',
-    name: 'register',
+    name: 'Cadastro',
     component: RegisterView
   },
   {
     path: '/alterar-senha',
-    name: 'alter-pass',
+    name: 'Alterar Senha',
     component: AlterPassView
   },
   {
-    path: '/inicio',
-    name: 'home',
-    component: HomeView
+    path: '/atendimentos',
+    name: 'Todos os atendimentos',
+    component: CallsView
   },
   {
-    path: '/sobre',
-    name: 'about',
-    component: AboutView
+    path: '/perfil',
+    name: 'Perfil',
+    component: ProfileView
   },
   {
-    path: '/contato',
-    name: 'contact',
-    component: ContactView
+    path: '/dicas',
+    name: 'Dicas',
+    component: TipsView
+  },
+  {
+    path: '/admin',
+    name: 'Página Administrativa',
+    component: AdminView
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = `${process.env.VUE_APP_TITLE} - ${ to.name }`
+  next()
 })
 
 export default router
