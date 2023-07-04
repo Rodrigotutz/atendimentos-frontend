@@ -1,30 +1,37 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <Sidebar />
+  <main class="bg">
+    <router-view v-slot="{ Component }">
+      <transition name="page-slide" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+  </main>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script setup>
+  import Sidebar from './components/Sidebar.vue'
+</script>
 
-nav {
-  padding: 30px;
+<style scoped>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  .bg {
+    background: linear-gradient(326deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9164040616246498) 48%, rgba(0,0,0,0.8463760504201681) 100%);
+    min-height: 100vh;
+    color: white;
+    overflow: hidden;
   }
-}
+
+  .page-slide-enter-active,
+  .page-slide-leave-active {
+    transition: 400ms ease-in-out;
+  }  
+
+  .page-slide-enter-from,
+  .page-slide-leave-to {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+
 </style>

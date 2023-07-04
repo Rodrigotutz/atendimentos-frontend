@@ -1,5 +1,5 @@
 {
-  "name": "portifolio",
+  "name": "sistema",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,10 +7,15 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5",
+    "three": "^0.153.0",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
+    "@types/three": "^0.152.1",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "sass": "^1.32.7",
