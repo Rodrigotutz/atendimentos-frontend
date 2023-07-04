@@ -9,8 +9,8 @@
                     <div class="modal-header">
                         <h3 class="modal-title" id="exampleModalLabel">Rodrigo Tutz</h3>
                     </div>
-                    <div class="modal-body fs-5 d-flex flex-column justify-content-between">
-                        <div class="links d-flex flex-column gap-2">
+                    <div class="modal-body fs-6 d-flex flex-column justify-content-between">
+                        <div class="links d-flex flex-column gap-1">
                             <li class="nav-link ">
                                 <router-link to="/atendimentos" class="nav-link"><i class="bi bi-bookmark-plus-fill"></i> Atendimentos</router-link>
                             </li>
@@ -25,9 +25,20 @@
                             </li>
                         </div>
                         
-                        <li class="nav-link">
-                            <router-link to="/" class="nav-link"><i class="bi bi-door-open-fill"></i> Sair</router-link>
-                        </li>
+                        
+                        <div class="sidebar-footer">
+                            <li class="nav-link">
+                                <router-link to="/novidades" class="nav-link"><i class="bi bi-newspaper"></i> Novidades</router-link>
+                            </li>
+
+                            <li class="nav-link">
+                                <a href="https://github.com/Rodrigotutz/atendimentos-frontend" target="_blank" class="nav-link"><i class="bi bi-github"></i> Github</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <router-link to="/" class="nav-link"><i class="bi bi-door-open-fill"></i> Sair</router-link>
+                            </li>
+                        </div>
                     
                     </div> 
                 </div>

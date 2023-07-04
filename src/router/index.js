@@ -7,6 +7,7 @@ import CallsView from '../views/app/CallsView.vue'
 import ProfileView from '../views/app/ProfileView.vue'
 import TipsView from '../views/app/TipsView.vue'
 import AdminView from '../views/app/AdminView.vue'
+import NewsView from '../views/blog/NewsView.vue'
 
 
 const routes = [
@@ -44,6 +45,11 @@ const routes = [
     path: '/admin',
     name: 'Página Administrativa',
     component: AdminView
+  },
+  {
+    path: '/novidades',
+    name: 'Veja todas as novidades',
+    component: NewsView
   }
 ]
 

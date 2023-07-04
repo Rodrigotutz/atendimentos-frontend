@@ -27,7 +27,10 @@
     transition: 400ms ease-in-out;
   }  
 
-  .page-slide-enter-from,
+  .page-slide-enter-from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
   .page-slide-leave-to {
     opacity: 0;
     transform: translateX(200px);
