@@ -29,11 +29,11 @@
 
   .page-slide-enter-from {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-10px);
   }
   .page-slide-leave-to {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(10px);
   }
 
 

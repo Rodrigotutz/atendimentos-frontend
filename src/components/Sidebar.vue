@@ -7,7 +7,7 @@
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content bg-dark text-white">
                     <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Rodrigo Tutz</h3>
+                        <h3 class="modal-title" id="sidebar">Rodrigo Tutz</h3>
                     </div>
                     <div class="modal-body fs-6 d-flex flex-column justify-content-between">
                         <div class="links d-flex flex-column gap-1">
@@ -46,6 +46,11 @@
         </div>
     </nav>
 </template>
+
+<script>
+
+</script>
+
 
 <style scoped>
     .modal-content {
