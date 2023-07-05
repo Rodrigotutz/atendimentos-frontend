@@ -32,9 +32,9 @@
                     <td>Em Andamento</td>
                     <td>CM Nhandeara</td>
                     <td class="case">Cliente relata erro ao gerar empenho</td>
-                    <td>
-                    <button type="button" class="btn btn-danger btn-sm ms-2"><i class="bi bi-trash-fill"></i></button>
-                    <button type="button" class="btn btn-primary btn-sm ms-2"><i class="bi bi-pencil-square"></i></button>
+                    <td class="d-flex flex-row">
+                        <button type="button" class="btn btn-danger btn-sm ms-2"><i class="bi bi-trash-fill"></i></button>
+                        <button type="button" class="btn btn-primary btn-sm ms-2"><i class="bi bi-pencil-square"></i></button>
                     </td>
                 </tr>
                 </tbody>
@@ -56,9 +56,18 @@
         opacity: 0.5;
     }
     .case {
-        max-width: 10ch;
+        max-width: 15ch;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+
+    @media(max-width: 450px) {
+        td {
+            max-width: 10ch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     }
 </style>
