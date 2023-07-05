@@ -14,3 +14,7 @@ npm run serve
 ```
 npm run build
 ```
+
+### Acessar Projeto
+
+[Atendimentos](https://atendimentos-frontend.vercel.app/)
