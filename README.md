@@ -14,6 +14,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Licensa
-MIT
