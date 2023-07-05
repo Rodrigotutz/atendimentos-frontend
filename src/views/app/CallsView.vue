@@ -55,4 +55,10 @@
         min-height: 50vh;
         opacity: 0.5;
     }
+    .case {
+        max-width: 10ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 </style>
