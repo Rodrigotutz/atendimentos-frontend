@@ -25,7 +25,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="n in 10">
+                <tr v-for="n in 20">
                     <th scope="row">108984</th>
                     <td>Rodrigo Tutz</td>
                     <td>SCPI 9</td>
