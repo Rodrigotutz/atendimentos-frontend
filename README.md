@@ -1,19 +1,19 @@
-# portifolio
+# Sistema de Cadastro de Atendimentos
 
-## Project setup
+## Instalar Dependências
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Rodar Servidor de Desenvolvimento
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar e minificar os arquivos para produção
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Licensa
+MIT
