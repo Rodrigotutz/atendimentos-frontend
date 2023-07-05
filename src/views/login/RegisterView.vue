@@ -1,6 +1,6 @@
 <template>
     <main class="register">
-        <form class="bg text-dark p-4 border rounded-3">
+        <form class="bg text-dark p-4 border-0 shadow-lg rounded-3">
             <div class="mb-3 text-center">
                 <h2 class="fs-2">Cadastre-se</h2>
             </div>
@@ -55,7 +55,7 @@
         </form>
         
         <div class="text-center">
-            Já tem uma conta? <router-link to="/" class="text-white">Clique aqui!</router-link>
+            Já tem uma conta? <router-link to="/" class="text-dark">Clique aqui!</router-link>
         </div>
     </main>
 </template>

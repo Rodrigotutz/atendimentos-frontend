@@ -1,6 +1,6 @@
 <template>
     <main class="login">
-        <form class="bg text-dark p-4 border rounded-3">
+        <form class="bg text-dark p-4 border-0 shadow rounded-3">
             <div class="mb-3 text-center">
                 <h2 class="fs-2">Entrar</h2>
             </div>
@@ -27,7 +27,7 @@
         </form>
         
         <div class="text-center">
-            Ainda não tem uma conta? <router-link to="/cadastrar" class="text-white">Clique aqui!</router-link>
+            Ainda não tem uma conta? <router-link to="/cadastrar" class="text-dark">Clique aqui!</router-link>
         </div>
     </main>
 </template>

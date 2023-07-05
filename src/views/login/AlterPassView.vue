@@ -1,6 +1,6 @@
 <template>
     <main class="login">
-        <form class="bg text-dark p-4 border rounded-3">
+        <form class="bg text-dark p-4 border-0 shadow rounded-3">
             <div class="mb-3 text-center">
                 <h2 class="fs-2">Alterar senha</h2>
             </div>
@@ -12,7 +12,7 @@
                 <button type="submit" class="btn btn-dark fw-bold ">Alterar senha</button>
             </div>
         </form>
-        <router-link to="/" class="text-white nav-link"><i class="bi bi-arrow-left"></i> Voltar</router-link>
+        <router-link to="/" class="text-dark nav-link fw-bold"><i class="bi bi-arrow-left"></i> Voltar</router-link>
     </main>
 </template>
 
