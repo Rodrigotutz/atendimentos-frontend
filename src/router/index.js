@@ -7,6 +7,7 @@ import CallsView from '../views/app/CallsView.vue'
 import ProfileView from '../views/app/ProfileView.vue'
 import TipsView from '../views/app/TipsView.vue'
 import AdminView from '../views/app/AdminView.vue'
+import TestView from '../views/app/TestView.vue'
 import NewsView from '../views/blog/NewsView.vue'
 
 
@@ -50,6 +51,11 @@ const routes = [
     path: '/novidades',
     name: 'Veja todas as novidades',
     component: NewsView
+  },
+  {
+    path: '/testes',
+    name: 'Testes de Layout',
+    component: TestView
   }
 ]
 

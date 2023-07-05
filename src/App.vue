@@ -1,6 +1,6 @@
 <template>
   <Sidebar />
-  <main class="bg">
+  <main class="bg text-dark">
     <router-view v-slot="{ Component }">
       <transition name="page-slide" mode="out-in">
         <component :is="Component" />
@@ -16,7 +16,7 @@
 <style scoped>
 
   .bg {
-    background: linear-gradient(326deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9164040616246498) 48%, rgba(0,0,0,0.8463760504201681) 100%);
+    background: #f1f6fc;
     min-height: 100vh;
     color: white;
     overflow: hidden;

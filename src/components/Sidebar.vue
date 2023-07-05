@@ -1,7 +1,7 @@
 <template>
     <nav class="sidebar">
         <div class="mx-2 fixed-top">
-            <button type="button" class="btn text-white fs-4" data-bs-toggle="modal" data-bs-target="#sidebar"><i class="bi bi-list"></i></button>
+            <button type="button" class="btn text-dark fs-2" data-bs-toggle="modal" data-bs-target="#sidebar"><i class="bi bi-list"></i></button>
         </div>
         <div class="modal fade" id="sidebar" tabindex="-1" aria-labelledby="sidebar" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
