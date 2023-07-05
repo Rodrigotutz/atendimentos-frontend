@@ -1,6 +1,10 @@
 <template>
-  <main class="pt-5 mt-5">
+  <main class="pt-5">
     <div class="container">
+
+      <div class="mb-5">
+        <h2 class="fw-bold">Perfil do Usuário</h2>
+      </div>
       <div class="row">
         <div class="col-lg-4">
           <div class="card mb-4 border-0 shadow">

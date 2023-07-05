@@ -62,7 +62,7 @@
         white-space: nowrap;
     }
 
-    @media(max-width: 450px) {
+    @media(max-width: 1000px) {
         td {
             max-width: 10ch;
             overflow: hidden;
