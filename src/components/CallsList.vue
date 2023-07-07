@@ -70,11 +70,11 @@ const callsFiltered = computed(() => {
     if(calls.value && search.value) {
         return calls.value.filter(
             call => 
-                call.atendimento.includes(search.value.toUpperCase()) || 
-                call.relator.includes(search.value.toUpperCase()) || 
-                call.sistema.includes(search.value.toUpperCase()) || 
-                call.situacao.includes(search.value.toUpperCase()) || 
-                call.entidade.includes(search.value.toUpperCase()) || 
+                call.atendimento.includes(search.value) || 
+                call.relator.includes(search.value) || 
+                call.sistema.includes(search.value) || 
+                call.situacao.includes(search.value) || 
+                call.entidade.includes(search.value) || 
                 call.caso.includes(search.value)
         )
     }

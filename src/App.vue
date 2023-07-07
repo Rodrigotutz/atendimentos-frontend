@@ -13,7 +13,7 @@
   import Sidebar from './components/Sidebar.vue'
 </script>
 
-<style>
+<style scoped>
 
   .bg {
     background: #f5f5f5;
@@ -34,19 +34,6 @@
   .page-slide-leave-to {
     opacity: 0;
     transform: translateY(10px);
-  }
-
-  body::-webkit-scrollbar {
-  width: 12px;
-  }
-
-  body::-webkit-scrollbar-track {
-    background: #f5f5f5;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
   }
 
 </style>
